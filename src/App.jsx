@@ -9,7 +9,7 @@ function App() {
   const {
     jobsDataLoading,
     jobsError,
-    jobList,
+    filter,
     filteredJobList,
     makeTrigger,
     updateFilter,
@@ -40,6 +40,7 @@ function App() {
           placeholder="Search By Title here"
           onChange={onChangeHandler}
           className="form-control my-3"
+          value={filter.jobTitle}
         />
         <h2>All Jobs</h2>
 

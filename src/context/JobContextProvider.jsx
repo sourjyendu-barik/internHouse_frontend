@@ -40,6 +40,7 @@ const JobContextProvider = ({ children }) => {
     makeTrigger,
     filteredJobList,
     updateFilter,
+    filter,
   };
   return <JobContext.Provider value={value}>{children}</JobContext.Provider>;
 };
